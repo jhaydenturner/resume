@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/jhaydenturner/resume#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhaydenturner/resume.git"
+  },
+  "license": "ISC",
+  "author": "hayden turner",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx esbuild --bundle --platform=node index.jsx > index.js && node index.js && rm index.js"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.3.1",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.0"
+  }
+}
