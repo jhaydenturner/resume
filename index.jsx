@@ -9,4 +9,5 @@ async function main() {
   const pdfBuffer = await renderToBuffer(<Resume />);
   fs.writeFileSync(resumeName, pdfBuffer);
 }
+
 main();
