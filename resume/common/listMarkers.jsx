@@ -2,13 +2,17 @@ import React from "react";
 import { View } from "@react-pdf/primitives";
 import { StyleSheet, Text } from "@react-pdf/renderer";
 
-const whiteColor = "#D4D4D4";
+// Colors inspired by VSCode theme "Dark Modern".
+// const contentColor = "#D4D4D4";
+
+// Colors inspired by VSCode theme "Light Modern".
+const contentColor = "#000000";
 
 const styles = StyleSheet.create({
   list: {
     gap: 3,
     maxWidth: 540,
-    color: whiteColor
+    color: contentColor
   },
   listItem: {
     flexDirection: "row",

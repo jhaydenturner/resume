@@ -10,13 +10,16 @@ Font.register({
 });
 
 // Colors inspired by VSCode theme "Dark Modern".
-const backgroundColor = "#1f1f1f";
-const lavenderColor = "#C586C0";
-const orangeColor = "#CE9178";
-const blueColor = "#569CD6";
-const lightBlueColor = "#9CDCFE";
-const whiteColor = "#D4D4D4";
-const yellowColor = "#DCDCAA";
+// const backgroundColor = "#1f1f1f";
+// const secondaryColor = "#C586C0";
+// const titleColor = "#CE9178";
+// const purposeColor = "#DCDCAA";
+
+// Colors inspired by VSCode theme "Light Modern".
+const backgroundColor = "#ffffff";
+const secondaryColor = "#AF00DB";
+const titleColor = "#A31515";
+const purposeColor = "#EE0000";
 
 const styles = StyleSheet.create({
   page: {
@@ -42,17 +45,17 @@ const styles = StyleSheet.create({
   title: {
     marginTop: -6,
     fontSize: 24,
-    color: orangeColor
+    color: titleColor
   },
   info: {
-    color: lavenderColor,
+    color: secondaryColor,
     textDecoration: "none"
   },
   purpose: {
     marginTop: -11,
     flexDirection: "col",
     maxWidth: "60%",
-    color: lightBlueColor,
+    color: purposeColor,
     fontWeight: "semibold"
   }
 });

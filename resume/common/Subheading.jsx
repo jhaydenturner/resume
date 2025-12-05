@@ -1,9 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View } from "@react-pdf/renderer";
 
-const yellowColor = "#DCDCAA";
-// const orangeColor = "#CE9178";
-const lavenderColor = "#C586C0";
+// // Colors inspired by VSCode theme "Dark Modern".
+// const subtitleColor = "#9CDCFE";
+// const secondaryColor = "#C586C0";
+
+// Colors inspired by VSCode theme "Light Modern".
+const subtitleColor = "#267F99";
+const secondaryColor = "#AF00DB";
 
 const styles = StyleSheet.create({
   subheadingWrapper: {
@@ -19,7 +23,7 @@ const styles = StyleSheet.create({
   subheadingSection: {
     flexDirection: "col",
     marginBottom: 8,
-    color: yellowColor
+    color: subtitleColor
   },
   leftSubheadingSection: {
     flexDirection: "col",
@@ -30,14 +34,14 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     fontSize: 9,
     fontWeight: "semibold",
-    color: yellowColor
+    color: subtitleColor
   },
   durationText: {
-    color: lavenderColor,
+    color: secondaryColor,
     fontWeight: "semibold"
   },
   locationText: {
-    color: lavenderColor
+    color: secondaryColor
   }
 });
 

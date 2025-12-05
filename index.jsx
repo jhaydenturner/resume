@@ -3,7 +3,8 @@ import fs from "fs";
 import { renderToBuffer } from "@react-pdf/renderer";
 import Resume from "./resume";
 
-const resumeName = "resume.pdf";
+// const resumeName = "resume_darkMode.pdf";
+const resumeName = "resume_lightMode.pdf";
 
 async function main() {
   const pdfBuffer = await renderToBuffer(<Resume />);
