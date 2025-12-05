@@ -2,10 +2,13 @@ import React from "react";
 import { View } from "@react-pdf/primitives";
 import { StyleSheet, Text } from "@react-pdf/renderer";
 
+const whiteColor = "#D4D4D4";
+
 const styles = StyleSheet.create({
   list: {
     gap: 3,
-    maxWidth: 540
+    maxWidth: 540,
+    color: whiteColor
   },
   listItem: {
     flexDirection: "row",

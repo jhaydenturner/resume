@@ -7,10 +7,12 @@ export default function Education() {
   return (
     <>
       <Heading title="Education" />
-      <Subheading title="BS, Architectural Studies" description="University of Utah" location="Salt Lake City, UT" duration="May 2020" />
+      <Subheading title="BS, Architectural Studies from the University of Utah" location="Salt Lake City, UT" duration="May 2020" />
       <List>
         <ListMarker info="Completed scrupulous coursework and an assortment of studio projects by means of iterative design and spatial reasoning." />
-        <ListMarker info="Additionally, completed curriculum through a broad, interdisciplinary lens of cultural & social influences, sustainability & resilience, material properties & construction practices, political, economic, and ecological systems, and building technologies & landscape ecologies." />
+        <ListMarker info="Accomplished curriculum that explored architecture through a broad, interdisciplinary lens including cultural & social influences as well as political, economic, and ecological systems." />
+        <ListMarker info="Acquired experience regarding material properties and construction practices with emphasis on sustainability and resilience." />
+        <ListMarker info="Mastered building technologies and landscape ecologies while becoming proficient with industry standard design and drafting tools." />
       </List>
     </>
   );

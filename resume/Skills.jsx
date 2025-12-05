@@ -7,9 +7,9 @@ export default function Skills() {
   return (
     <>
       <Heading title="Skills" />
-      <Subheading title="Technical Skills" description="Software Development & Design Programs" />
+      <Subheading title="Technical Skills" />
       <List>
-        <ListMarker info="Experienced with JavaScript" />
+        <ListMarker info="Experience with JavaScript" />
         <Sublist>
           <List>
             <ListMarker
@@ -19,11 +19,18 @@ export default function Skills() {
             <ListMarker info="Backend: Node, API design, API integration, WebSockets, Infrastructure as Code (IaC)" secondary={true} />
           </List>
         </Sublist>
-        <ListMarker info="AWS: Lambda, Athena, DynamoDB, Systems Manager, S3, IAM, AWS Glue, CloudWatch" />
-        <ListMarker info="Proficient in Python and SQL" />
-        <ListMarker info="Version Control with git (Bitbucket, GitHub)" />
-        <ListMarker info="Proficient with Adobe Design Software such as Photoshop, Illustrator and InDesign" />
-        <ListMarker info="React Native/Expo" />
+        <ListMarker info="Experience with SQL & NoSQL databases" />
+        <Sublist>
+          <List>
+            <ListMarker info="SQL: PostgreSQL, Presto (AWS Athena), and MySQL" secondary={true} />
+            <ListMarker info="NoSQL: AWS DynamoDB" secondary={true} />
+          </List>
+        </Sublist>
+        <ListMarker info="Experience with Amazon Web Services: Lambda, Athena, DynamoDB, Systems Manager, S3, IAM, AWS Glue, and CloudWatch" />
+        <ListMarker info="Experience with version control (git, Bitbucket, GitHub)" />
+        <ListMarker info="Experience with Adobe design software such as Photoshop, Illustrator, and InDesign" />
+        <ListMarker info="Proficient in React Native/Expo" />
+        <ListMarker info="Proficient in Python" />
       </List>
     </>
   );

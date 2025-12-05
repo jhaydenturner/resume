@@ -1,8 +1,9 @@
 import React from "react";
 import { StyleSheet, Text, View } from "@react-pdf/renderer";
 
-const lightGray = "#B6B6B6";
-const darkGray = "#555555";
+const yellowColor = "#DCDCAA";
+// const orangeColor = "#CE9178";
+const lavenderColor = "#C586C0";
 
 const styles = StyleSheet.create({
   subheadingWrapper: {
@@ -17,7 +18,8 @@ const styles = StyleSheet.create({
   },
   subheadingSection: {
     flexDirection: "col",
-    marginBottom: 8
+    marginBottom: 8,
+    color: yellowColor
   },
   leftSubheadingSection: {
     flexDirection: "col",
@@ -27,28 +29,24 @@ const styles = StyleSheet.create({
   titleText: {
     marginBottom: 2,
     fontSize: 9,
-    fontWeight: "semibold"
-  },
-  descriptionText: {
-    color: lightGray,
-    fontWeight: "semibold"
+    fontWeight: "semibold",
+    color: yellowColor
   },
   durationText: {
-    color: darkGray,
+    color: lavenderColor,
     fontWeight: "semibold"
   },
   locationText: {
-    color: lightGray
+    color: lavenderColor
   }
 });
 
-export function Subheading({ title, description, location, duration, additional = false }) {
+export function Subheading({ title, location, duration, additional = false }) {
   const wrapperStyle = additional ? styles.additionalSubheadingWrapper : styles.subheadingWrapper;
   return (
     <View style={wrapperStyle}>
       <View style={styles.subheadingSection}>
         <Text style={styles.titleText}>{title}</Text>
-        <Text style={styles.descriptionText}>{description}</Text>
       </View>
       <View style={styles.leftSubheadingSection}>
         <Text style={styles.durationText}>{duration}</Text>

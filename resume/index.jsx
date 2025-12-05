@@ -9,8 +9,14 @@ Font.register({
   fonts: [{ src: "./fonts/Monaco.ttf", fontWeight: "normal" }]
 });
 
-const lightGray = "#B6B6B6";
-const darkGray = "#555555";
+// Colors inspired by VSCode theme "Dark Modern".
+const backgroundColor = "#1f1f1f";
+const lavenderColor = "#C586C0";
+const orangeColor = "#CE9178";
+const blueColor = "#569CD6";
+const lightBlueColor = "#9CDCFE";
+const whiteColor = "#D4D4D4";
+const yellowColor = "#DCDCAA";
 
 const styles = StyleSheet.create({
   page: {
@@ -18,7 +24,8 @@ const styles = StyleSheet.create({
     paddingVertical: 36,
     paddingHorizontal: 36,
     fontFamily: "Monaco",
-    fontSize: 8
+    fontSize: 8,
+    backgroundColor: backgroundColor
   },
   header: {
     height: 36,
@@ -34,17 +41,18 @@ const styles = StyleSheet.create({
   },
   title: {
     marginTop: -6,
-    fontSize: 24
+    fontSize: 24,
+    color: orangeColor
   },
   info: {
-    color: darkGray,
+    color: lavenderColor,
     textDecoration: "none"
   },
   purpose: {
     marginTop: -11,
     flexDirection: "col",
     maxWidth: "60%",
-    color: lightGray,
+    color: lightBlueColor,
     fontWeight: "semibold"
   }
 });
@@ -55,19 +63,19 @@ const MyDocument = () => (
       <View style={styles.header}>
         <Text style={styles.title}>J. Hayden Turner</Text>
         <View style={styles.headerInfo}>
-          <Link style={styles.info} src="mailto:hayden.turner1@gmail.com">
-            hayden.turner1@gmail.com
+          <Link style={styles.info} src="mailto:jhaydenturner@gmail.com">
+            jhaydenturner@gmail.com
           </Link>
-          <Link style={styles.info} src="https://www.linkedin.com/in/jeremy-hayden-turner/">
-            https://www.linkedin.com/in/jeremy-hayden-turner/
+          <Link style={styles.info} src="https://www.linkedin.com/in/jht22/">
+            https://www.linkedin.com/in/jht22/
           </Link>
           <Text style={styles.info}>385-299-9137</Text>
         </View>
       </View>
       <View style={styles.purpose}>
         <Text>
-          Seeking a full time position which would benefit from my enthusiasm for problem solving by means of successful design, computer
-          programming, and building software.
+          Seeking a full time position where I can apply my enthusiasm for problem solving through successful design and computer
+          programming.
         </Text>
       </View>
       <CodingExperience />
